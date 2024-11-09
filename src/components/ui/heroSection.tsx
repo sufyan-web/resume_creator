@@ -5,9 +5,9 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="w-full flex items-center justify-between px-6 bg-primary text-white pt-20" style={{ minHeight: "calc(100vh - 5rem)" }}>
+    <section className="w-full flex justify-between bg-primary text-white pt-20" style={{ minHeight: "calc(100vh - 5rem)" }}>
       {/* Left Section */}
-      <div className="max-w-lg">
+      <div className="max-w-lg pl-8">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight mb-4">
           Unlock Your Career Potential with a Professional Resume
         </h1>
@@ -24,8 +24,8 @@ const Hero = () => {
 
       {/* Right Section (Image) */}
       <div className="hidden md:block md:w-1/2">
-        <div>
-          <Image
+        <div className=" flex justify-center">
+          <Image className=""
             src="https://play-lh.googleusercontent.com/DIlQTjHgkrGQflRN-op4iiziQjl1oDVUYdpjbmW4o8gCtSkxs4YXN1muaiCkf5220Q=w526-h296-rw"
             alt="resume"
             width={400}
