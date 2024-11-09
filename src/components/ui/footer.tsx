@@ -32,7 +32,7 @@ const Footer = ()=>{
               href="mailto:engr.atherali@gmail.com"
               className="hover:underline"
             >
-             engr.atherali@gmail.com
+             sufiyan033130@gmail.com
             </a>
           </p>
           <p>Version 1.0.0</p>
