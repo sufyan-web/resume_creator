@@ -48,14 +48,14 @@ const About = () => {
             <p className="text-lg leading-relaxed mb-6">
               The Resume Generator was created by a ENGINEER'S PRODUCTON, with the goal of helping job seekers to create a polished resume in less time. this tool was built to make resume creation as easy as possible.
             </p>
-            <p className="text-lg font-semibold">Created by: Engineer Ather Ali</p>
+            <p className="text-lg font-semibold">Created by: Sufyan Ahmed</p>
             <p>
               Contact us:{" "}
               <a
                 href="mailto:engr.atherali@gmail.com"
                 className="hover:underline"
               >
-                engr.atherali@gmail.com
+                sufiyan033130@gmail.com
               </a></p>
           </div>
         </section>

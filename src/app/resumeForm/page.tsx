@@ -79,7 +79,7 @@ const Form = () => {
     <>
       <div className="bg-primary text-white lg:font-bold py-5 flex gap-2 justify-center">
       <Image
-              className="filter invert " // This will make the logo white
+              className="filter invert object-fill " // This will make the logo white
               src="https://nextjs.org/icons/next.svg"
               alt="Next.js logo"
               width={70}
@@ -91,7 +91,7 @@ const Form = () => {
        
       {/* banner */}
       <img
-        className="h-auto lg:h-64 w-full"
+        className="h-auto lg:h-64 w-full object-scale-down bg-primary"
         src={banner.src} alt="banner" />
 
 
@@ -214,7 +214,7 @@ const Form = () => {
         {/* *********************** Right Section  **********************/}
         <div className=" sm:w-full md:w-full xl:w-1/2 max-w-3xl w-full">
           <div id="cv-template" className="text-sm sm:text-sm md:text-lg border border-gray-300 p-1 md:p-8 rounded-lg shadow-xl bg-white text-gray-900">
-            <h2 className="text-2xl font-bold text-center text-blue-600 mb-8">{formData.name || "Ather Ali"}</h2>
+            <h2 className="text-2xl font-bold text-center text-blue-600 mb-8">{formData.name || "Sufyan Ahmed"}</h2>
 
             {/* Profile Section with Image and Bio Data */}
             <div className="w-auto flex flex-row items-center">
@@ -230,8 +230,8 @@ const Form = () => {
               {/* Bio Data Section */}
               <div className="text-center md:text-left">
                 <p className=" text-gray-600">{formData.jobTitle || "Software Developer"}</p>
-                <p className=""><strong>Email:</strong> {formData.email || "engr.ather.93@gmail.com"}</p>
-                <p className=""><strong>Phone:</strong> {formData.phone || "+923320145410"}</p>
+                <p className=""><strong>Email:</strong> {formData.email || "sufiyan033130@gmail.com"}</p>
+                <p className=""><strong>Phone:</strong> {formData.phone || "+922443635390"}</p>
                 <p className=""><strong>Address:</strong> {formData.address || "Provide your address"}</p>
               </div>
             </div>
@@ -263,7 +263,7 @@ const Form = () => {
           {/* download image */}
           <img
            onClick={generatePDF}
-            className="h-60 w-full my-10 rounded-md hover:cursor-pointer"
+            className="h-60 w-full my-10 rounded-md hover:cursor-pointer object-fill"
             src="https://img.freepik.com/premium-photo/free-download-text-words-typography-written-smart-phone-against-blue-background_21336-8034.jpg" alt="banner" />
 
           {/* Generate PDF Button */}

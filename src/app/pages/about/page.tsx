@@ -28,7 +28,7 @@ const About = () => {
           </ul>
         </div>
         <p className="text-center text-gray-600 mt-8">
-          <strong>Created with ❤️ by YourName</strong>
+          <strong>Created with ❤️ by Sufyan Ahmed</strong>
         </p>
       </div>
     </>
