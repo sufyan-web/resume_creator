@@ -3,34 +3,39 @@ import Image from "next/image";
 
 const Header = () => {
     return (
-        <div
-            className="w-full h-20 p-4 text-white text-center"
-            style={{ backgroundColor: "var(--primary-color)" }} // You can also define this in Tailwind config
-        >
-            <ul className="flex justify-between items-center space-x-8">
-                <li className="flex items-center gap-3 ">
-                    <Image
-                        src="https://cdn-icons-png.flaticon.com/512/2788/2788002.png"
-                        alt="Resume Generator Logo"
-                        width={40}
-                        height={50}
-                        priority
-                    />
-                    <h1 className="xl:text-lg lg:text-lg md:text-md text-sm font-semibold">C.V Generator</h1>
-                </li>
+        <header className=" w-full h-20  bg-primary text-white">
+        <nav className=" mx-auto flex justify-between px-8 items-center">
+            {/* Logo and Title */}
+            <div className="flex items-start gap-3">
+                <Image
+                    src="https://cdn-icons-png.flaticon.com/512/2788/2788002.png"
+                    alt="Resume Generator Logo"
+                    width={40}
+                    height={50}
+                    priority
+                />
+                <h1 className="text-lg font-semibold mt-2">C.V Generator</h1>
+            </div>
 
-                <li className="flex gap-2 xl:text-lg lg:text-lg md:text-md text-md py-5" >
-                    <Link href="/about" className= " px-3 py-1 rounded-full hover:bg-blue-600 transition duration-300">
-                        About
+            {/* Navigation Links */}
+            <ul className="flex gap-6 item-end">
+                <li>
+                    <Link href="/" legacyBehavior>
+                        <a className="px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300 text-base font-medium">
+                            Home
+                        </a>
                     </Link>
-                    <Link href="/" className= "px-3 py-1 rounded-full hover:bg-blue-600 transition duration-300">
-                        Home
+                </li>
+                <li>
+                    <Link href="/about" legacyBehavior>
+                        <a className="px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300 text-base font-medium">
+                            About
+                        </a>
                     </Link>
                 </li>
             </ul>
-
-            
-        </div>
+        </nav>
+    </header>
     );
 };
 
